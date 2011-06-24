@@ -15,6 +15,7 @@ class ProjectsController < ApplicationController
     else
       flash[:alert] = "Project has not been created."
       render :action => "new"
+    end
   end
 
   def show
