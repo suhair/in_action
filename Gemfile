@@ -31,6 +31,12 @@ gem 'sqlite3'
  end
 
  group :test do
+    gem 'database_cleaner'
     gem 'cucumber-rails'
     gem 'capybara'
  end
+    
+ group :development do
+   gem 'win32console'
+ end
+
