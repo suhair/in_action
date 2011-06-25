@@ -1,0 +1,8 @@
+Feature: Deleting projects
+  Scenario: Deleting a project
+    Given there is a project called "Textmate 2"
+    And I am on the homepage
+    When I follow "Textmate 2"
+    And I follow "Delete"
+    Then I should see "Project has been deleted."
+    Then I should not see "Textmate 2"
