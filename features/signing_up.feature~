@@ -1,0 +1,5 @@
+Feature: Signing Up
+  Scenario: Signing up for a user
+    Given I am on the homepage
+    When I follow "Sign up"
+    And I fill in Email with "user@ticketee.com" 

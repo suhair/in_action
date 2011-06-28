@@ -34,6 +34,7 @@ gem 'sqlite3'
     gem 'database_cleaner'
     gem 'cucumber-rails'
     gem 'capybara'
+    gem 'factory_girl'
  end
     
  group :development do
