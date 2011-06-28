@@ -36,6 +36,8 @@ gem 'sqlite3'
     gem 'capybara'
     gem 'factory_girl'
  end
+
+ gem 'devise', '1.3.4'
     
  group :development do
    gem 'win32console'
