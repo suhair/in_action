@@ -17,7 +17,7 @@ Feature: Viewing Tickets
     And I should see "Gradients! Starbursts! Oh My!"
     When I follow "Ticketee"
     And I follow "Internet Explorer"
-    Then I should see "Starbursts compliance"
+    Then I should see "Standards compliance"
     And I should not see "Make it shiny"
     When I follow "Standards compliance"
     Then I should be on the "Standards compliance" ticket in the "Internet Explorer" project
