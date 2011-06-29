@@ -39,6 +39,9 @@ ActiveRecord::Schema.define(:version => 20110628124818) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
