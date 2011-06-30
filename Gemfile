@@ -45,5 +45,6 @@ gem 'sqlite3'
     
  group :development do
    gem 'win32console'
+   gem 'launchy'
  end
 

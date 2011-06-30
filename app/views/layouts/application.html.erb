@@ -16,6 +16,7 @@
   <h1><%= link_to "Ticketee", root_path %></h1>
   <% if user_signed_in? %>
     Signed in as <%= current_user.email %>
+        <%= link_to "Admin", admin_root_path %>
   <% else %>
     <nav> 
       <%= link_to "Sign up", new_user_registration_path  %>
