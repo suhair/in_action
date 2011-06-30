@@ -22,3 +22,15 @@ Feature: Hidden Links
     Given I am on the homepage
     And I follow "Textmate 2"
     Then I should not see the "Edit Project" link
+  Scenario: Edit Project link is hidden for non-admin users
+    Given I am signed in as "user@ticketee.com"
+    And I follow "Textmate 2"
+    Then I should not see the "Edit Project" link
+  Scenario: Edit Project link is visible for admin users
+    Given I am signed in as "admin@ticketee.com"
+    And I follow "Textmate 2"
+    Then I should see the "Edit Project" link
+  Scenario: Delete project link is hidden for non-signed in users
+    Given I am on the homepage
+    And I follow "Textmate 2"
+    Then I should not see the "Delete Project" link

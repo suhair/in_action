@@ -6,15 +6,20 @@
 
 
 
-<% @project.tickets.each do |ticket| %>
-  <li>#<%= ticket.id %> - <%= link_to ticket.title, [@project, ticket] %> </li>
-  
+<ul id='tickets'>
+  <% @project.tickets.each do |ticket| %>
+    <li>#<%= ticket.id %> - <%= link_to ticket.title, [@project, ticket] %> </li>
+  <% end %>  
+</ul>
+
 <menu>
-  <%= link_to "Edit", edit_project_path(@project) %>
+  <%= admins_only do %>
+    <%= link_to "Edit Project", edit_project_path(@project) %>
+  <% end %>
 </menu>
 
 
-<%= link_to "Delete", @project, :method => :delete,
+<%= link_to "Delete Project", @project, :method => :delete,
         :confirm => "Are you sure you want to delete this project?" %>
 
 <%=
