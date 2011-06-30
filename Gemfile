@@ -28,6 +28,8 @@ gem 'sqlite3'
 # and rake tasks are available in development mode:
  group :development, :test do
    gem 'rspec-rails', '~> 2.3'
+   gem 'autotest'
+   gem 'diff-lcs'
  end
 
  group :test do
@@ -39,6 +41,7 @@ gem 'sqlite3'
  end
 
  gem 'devise', '1.3.4'
+ gem 'escape_utils'
     
  group :development do
    gem 'win32console'
