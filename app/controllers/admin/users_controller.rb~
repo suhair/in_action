@@ -15,5 +15,6 @@ class Admin::UsersController < Admin::BaseController
     else
       flash[:alert] = "User has not been created."
       render :action => "new"
+    end
   end
 end
