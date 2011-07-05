@@ -1,8 +1,8 @@
 Feature: Editing Tickets
   Background:
     Given there are the following users:
-      |email                    |password
-      |user@ticketee.com        |password
+      |email                    |password |
+      |user@ticketee.com        |password |
     And I am signed in as them
     Given there is a project called "Textmate 2"
     And "user@ticketee.com" has created a ticket for this project:
